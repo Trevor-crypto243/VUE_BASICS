@@ -1,0 +1,46 @@
+What is vue
+-Js and Ts framework
+-can be used to create widgets/components 
+-full websites
+-controllers
+-SPA
+
+New vue features
+-The composition API
+    setUp()
+    -impiroves reusability, organisation and readbility
+
+-can have many root elements in a template
+-The teleport components
+-Suspense component
+-Typescript support out of the box 
+
+vue does not use semicolons
+
+Extensions
+-liveserver
+-vetur
+
+vue router
+vue cli
+
+standalone widgets
+-requires minimal set setUp
+-just put the cdn link in the html page
+
+creating a vue app
+outputting dynamic lists
+Data and templates
+templating
+
+click events
+vue directives
+v-on: or @
+
+conditional rendering
+v-if
+
+
+
+
+

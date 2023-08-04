@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+</head>
+<body>
+    <div id="app">
+        <h2>I am the template {{age}} {{title}}</h2>
+
+        <button @click="age++">Increase age</button>
+        <button @click="changeTitle('Ashley Asiko')">change title</button>
+
+        <div v-if="show">
+         <p>Hey trev</p>  
+        </div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
