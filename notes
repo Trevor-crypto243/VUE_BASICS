@@ -4,6 +4,9 @@ What is vue
 -full websites
 -controllers
 -SPA
+    -single html page
+    -vue injects components to html page
+
 
 New vue features
 -The composition API
@@ -59,6 +62,23 @@ conditionally give elements certain classess based on certain conditions
 computed properties
 e.g filtered arrays
 
+The vue CLI and Bigger projects
+    Modern Javascript features
+    Live reload dev server
+    Optimise code for production
+
+Installing the vue cli
+npm install -g @vue/cli
+we can use it in the commandline to generate projects
+
+creating project
+vue create 'project-name'
+vue create modal-project --packageManager npm
+
+vue component structure
+-template
+-style
+-script(logic, data)
 
 
 
