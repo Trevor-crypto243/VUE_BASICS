@@ -39,6 +39,25 @@ v-on: or @
 
 conditional rendering
 v-if
+v-else
+v-show
+
+outputting lists
+v-for
+
+Attribute binding
+binding dynamic values to html attributes e.g hrefs
+v-bind:href="url"
+:href="url"
+<img :src="book.img">
+
+
+Dynamic classes
+conditionally give elements certain classess based on certain conditions
+
+
+computed properties
+e.g filtered arrays
 
 
 

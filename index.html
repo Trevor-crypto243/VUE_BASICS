@@ -5,6 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://unpkg.com/vue@3.0.2"></script>
+    <style>
+         body{
+            background: grey;
+            max-width: 960px;
+            margin: 20px auto;
+         }
+
+         p,h3,ul{
+            margin: 0;
+            padding: 0;
+         }
+
+         img{
+            height: 2cm;
+            width: 3cm;
+         }
+
+         li{
+            list-style-type: none;
+            background: white;
+            margin: 20px auto;
+            padding: 10px 20px;            
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+         }
+
+         li.fav{
+            background: hsl(327, 60%, 58%);
+            color: white;
+         }
+
+    </style>
 </head>
 <body>
     <div id="app">
@@ -14,9 +48,15 @@
         <button @click="changeTitle('Ashley Asiko')">change title</button>
 
         <div v-if="show">
-         <p>Hey trev</p>  
+            <ul>
+                <li v-for="book in filteredBooks" :class="{fav: book.isFav}" @click="toggleFav(book)">
+                    <img :src="book.img">
+                    <p>{{book.title}} - {{book.author}} - {{ age }}</p>  
+                </li>
+            </ul>
         </div>
     </div>
+
 <script src="app.js"></script>
 </body>
 </html>
