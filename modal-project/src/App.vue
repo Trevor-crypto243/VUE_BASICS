@@ -1,27 +1,32 @@
 <template>
   <div>
-    <h1>{{title}}</h1>
+    <SignUpForm/>
+
   </div>
 </template>
 
 <script>
+import SignUpForm from './components/SignUpForm.vue'
+
   export default {
     name: 'App',
-    data(){
-      return{ 
-        title:"My first Vue App"
-      } 
-    }
+    components:{SignUpForm} 
   }
 </script>
 
 <style>
-#app {
+#app{
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #444;
   margin-top: 60px;
 }
+
+body{
+  margin: 0;
+  background: #eee;
+}
+
 </style>

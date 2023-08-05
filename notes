@@ -23,6 +23,7 @@ vue does not use semicolons
 Extensions
 -liveserver
 -vetur
+    type vue and hit tab to create template in Vscode
 
 vue router
 vue cli
@@ -52,6 +53,9 @@ Attribute binding
 binding dynamic values to html attributes e.g hrefs
 v-bind:href="url"
 :href="url"
+:class
+:disabled
+:disabled="isPlaying"
 <img :src="book.img">
 
 
@@ -74,11 +78,82 @@ we can use it in the commandline to generate projects
 creating project
 vue create 'project-name'
 vue create modal-project --packageManager npm
+cleaning up 
+    -home.vue
+    -template in App.vue
 
 vue component structure
 -template
 -style
 -script(logic, data)
+
+
+Template Refs
+<input type="text" ref="name">
+console.log(this.$refs.name)
+same for querySelectorAll()
+can be used to add classes, remove classes
+
+Multiple components
+-Never name them with the same html tag names
+-if so start with a capital
+-scoped stylings  make the code slower 
+-instead use targeted elements
+e.g header a
+
+
+props
+-Single source of truth
+-using data binding to pass arrays as props
+-conditional rendering
+
+Emitting custom events
+-fired from a child component and listened in the parent component
+-can also be used to send data to the parent components
+
+Event modifiers
+-react to only certain conditions in click events
+@click.shift, @click.left,@click.alt @click.self
+
+Slots
+passing templates into components
+pass more comlex data unlike props(booeans, strings)
+<slot></slot>
+named slots
+default slots
+
+
+Teleport component
+-teleport components from a view app to different dom location completely
+
+
+Ninja reaction timer
+
+Life cycle hooks of vue components
+-created
+-mounted
+-updated
+-destroyed
+
+
+Forms and Inputs
+Two way data binding
+-Tracking what a user types into an input field
+-V-model - used with form fields
+-select boxes
+-keyboard events
+    used enter to add values to a list and displayed the list below
+
+submitting Forms
+-attaching submit events to forms
+@submit.prevent
+
+conditionally outputting errors
+
+
+The Vue Router
+
+
 
 
 
