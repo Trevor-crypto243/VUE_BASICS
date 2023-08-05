@@ -152,6 +152,18 @@ conditionally outputting errors
 
 
 The Vue Router
+-vue router installation
+-the index.js files are always imported by default 
+-Router links 
+-databinding route names to links - good for routes that are dynamic
+
+Folder and file structure
+ components folder to hold components to be nested - that are not page specific
+ views to hold route components
+
+
+Route parameters
+
 
 
 

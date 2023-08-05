@@ -1,18 +1,13 @@
 <template>
   <div>
-    <SignUpForm/>
-
+    <div id="nav">
+      <router-link to="/">Home</router-link>
+      <router-link :to="{ name: 'About'}">About</router-link>
+      <router-link :to="{ name: 'Jobs'}">Jobs</router-link>
+    </div>
+    <router-view/>
   </div>
 </template>
-
-<script>
-import SignUpForm from './components/SignUpForm.vue'
-
-  export default {
-    name: 'App',
-    components:{SignUpForm} 
-  }
-</script>
 
 <style>
 #app{
@@ -24,9 +19,21 @@ import SignUpForm from './components/SignUpForm.vue'
   margin-top: 60px;
 }
 
-body{
-  margin: 0;
-  background: #eee;
+#nav{
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e58;
+  text-decoration: none;
+  padding: 10px;
+  border-radius:4px;
+}
+
+#nav a.router-link-exact-active{
+  color: white;
+  background: crimson;
 }
 
 </style>
