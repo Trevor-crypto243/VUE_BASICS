@@ -113,6 +113,7 @@ Template Refs
 console.log(this.$refs.name)
 same for querySelectorAll()
 can be used to add classes, remove classes
+this.$ref.name.classList.add('shadow')
 
 Multiple components
 -Never name them with the same html tag names
@@ -120,6 +121,30 @@ Multiple components
 -scoped stylings  make the code slower 
 -instead use targeted elements
 e.g header a
+
+//use ::v-deep to target child components and style them
+<!-- ParentComponent.vue -->
+<template>
+  <div class="parent">
+    <ChildComponent />
+  </div>
+</template>
+
+<style scoped>
+.parent {
+  padding: 1rem;
+}
+
+::v-deep(.child-content) {
+  font-size: 18px;
+}
+</style>
+
+Then in ChildComponent.vue:
+<template>
+  <div class="child-content">Hello from child</div>
+</template>
+
 
 
 props
