@@ -1,19 +1,29 @@
 What is vue
 -Js and Ts framework
--can be used to create widgets/components 
+-can be used to create widgets/components i.e search bar, contact form, interactive components
 -full websites
 -controllers
 -SPA
     -single html page
     -vue injects components to html page
 
+_________Vue Widgets
+Standalone widgets
+    - Create a standalone widget and inject it any where in our web page, can be re used
+    - Self contained
+Full Websites
+    - Single page application
 
-New vue features
+______New vue features
 -The composition API
     setUp()
     -impiroves reusability, organisation and readbility
 
 -can have many root elements in a template
+    <template>
+    <div>Element 1</div>
+     <div>Element 2</div>
+    </template>
 -The teleport components
 -Suspense component
 -Typescript support out of the box 
