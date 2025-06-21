@@ -209,6 +209,8 @@ Folder and file structure
 
 Route parameters
 
+<router-view> //similar to router outlet in angular
+
 
 
 
