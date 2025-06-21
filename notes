@@ -24,8 +24,11 @@ ______New vue features
     <div>Element 1</div>
      <div>Element 2</div>
     </template>
--The teleport components
+-The teleport components 
+    -render content from one component in a different place in the dom e.g handling modals
 -Suspense component
+    - handle asynchronous components easily
+    - can provide fall-back content (e.g a spinner ) until data is loaded
 -Typescript support out of the box 
 
 vue does not use semicolons
@@ -49,7 +52,7 @@ templating
 
 click events
 vue directives
-v-on: or @
+v-on: or @ //short form for v-on
 
 conditional rendering
 v-if
@@ -59,7 +62,14 @@ v-show
 outputting lists
 v-for
 
-Attribute binding
+________Events
+mouseover(enter)
+mouseleave
+mousemove
+double click
+right click
+
+_________Attribute binding
 binding dynamic values to html attributes e.g hrefs
 v-bind:href="url"
 :href="url"
@@ -76,7 +86,7 @@ conditionally give elements certain classess based on certain conditions
 computed properties
 e.g filtered arrays
 
-The vue CLI and Bigger projects
+_______________The vue CLI and Bigger projects
     Modern Javascript features
     Live reload dev server
     Optimise code for production
